@@ -1,7 +1,7 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"C:\\Users\\OSI-7\\Documents\\Test Enviroments\\BlogProject\\angularJsFiles\\sampleModule.js":[function(require,module,exports){
 // require("../bower_components/angularjs/angular.min.js");
-var angular = new (require("angular"))();
-// require("angular");
+// var angular = require("angular");
+ require("angular");
 
 var data = require("./todoData.js");
 
@@ -13,7 +13,7 @@ sampleApp.controller("sampleCtrl", function($scope){
 
   } );
 
-},{"./todoData.js":2,"angular":3}],2:[function(require,module,exports){
+},{"./todoData.js":"C:\\Users\\OSI-7\\Documents\\Test Enviroments\\BlogProject\\angularJsFiles\\todoData.js","angular":"C:\\Users\\OSI-7\\Documents\\Test Enviroments\\BlogProject\\node_modules\\angular\\angular.js"}],"C:\\Users\\OSI-7\\Documents\\Test Enviroments\\BlogProject\\angularJsFiles\\todoData.js":[function(require,module,exports){
 module.exports = {
   user : "Adam",
   items: [{ action: "Buy Flowers", done: false },
@@ -23,7 +23,9 @@ module.exports = {
           ]
 };
 
-},{}],3:[function(require,module,exports){
+},{}],"C:\\Users\\OSI-7\\Documents\\Test Enviroments\\BlogProject\\node_modules\\angular\\angular.js":[function(require,module,exports){
+(function (global){
+;__browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /**
  * @license AngularJS v1.3.13
  * (c) 2010-2014 Google, Inc. http://angularjs.org
@@ -26154,4 +26156,9 @@ var minlengthDirective = function() {
 })(window, document);
 
 !window.angular.$$csp() && window.angular.element(document).find('head').prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}</style>');
-},{}]},{},[1]);
+; browserify_shim__define__module__export__(typeof angular != "undefined" ? angular : window.angular);
+
+}).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{}]},{},["C:\\Users\\OSI-7\\Documents\\Test Enviroments\\BlogProject\\angularJsFiles\\sampleModule.js"]);
